@@ -22,7 +22,7 @@ declare class Vector3 {
 	public y: number;
 	public z: number;
 
-	constructor(x: number, y: number, z: number);
+	constructor(x?: number, y?: number, z?: number);
 	constructor(arr: Array3d);
 	constructor(obj: IVector3);
 
