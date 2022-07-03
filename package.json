@@ -1,5 +1,5 @@
 {
-	"name": "@ragempcommunity/types-server",
+	"name": "@libertymp/types-server",
 	"version": "2.0.6",
 	"description": "Types definitions for RAGE:MP server-side module",
 	"main": "index.d.ts",
@@ -8,7 +8,7 @@
 		"enums.d.ts",
 		"hashes"
 	],
-	"author": "@ragempcommunity",
+	"author": "@libertymp",
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
