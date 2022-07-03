@@ -1,5 +1,5 @@
 {
-	"name": "@ragempcommunity/types-client",
+	"name": "@libertymp/types-client",
 	"version": "2.0.6",
 	"description": "Types definitions for RAGE:MP client-side module",
 	"main": "index.d.ts",
@@ -11,7 +11,7 @@
 		"game",
 		"enums"
 	],
-	"author": "@ragempcommunity",
+	"author": "@libertymp",
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
