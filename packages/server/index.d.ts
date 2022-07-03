@@ -720,8 +720,10 @@ declare class PlayerMp extends EntityMp {
 	 * Writes a chat message to player.
 	 *
 	 * @param message Text what should be output in player chat.
+	 * 
+	 * CUSTOM IMPLEMENTATION
 	 */
-	public outputChatBox(message: string): void;
+	// public outputChatBox(message: string): void;
 
 	/**
 	 * Starts animation
