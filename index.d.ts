@@ -767,17 +767,6 @@ declare class PlayerMp extends EntityMp {
 	 */
 	public removeWeapon(weaponHash: HashOrNumberOrString<RageEnums.Hashes.Weapon>): void;
 
-	/**
-	 * Sets clothing for player.
-	 *
-	 * Alternative of client-side function: [Player::setComponentVariation](https://wiki.rage.mp/index.php?title=Player::setComponentVariation)
-	 *
-	 * @param component ClothesComponent
-	 * @param drawable Number
-	 * @param texture Texture
-	 * @param palette Palette
-	 */
-	public setClothes(component: RageEnums.ClothesComponent | number, drawable: number, texture: number, palette: number): void;
 
 	/**
 	 * Sets player customization (NB: This resets your weapons also).
@@ -847,11 +836,6 @@ declare class PlayerMp extends EntityMp {
 	 * To disable any overlay use 255 as index.
 	 */
 	public setHeadOverlay(overlay: RageEnums.HeadOverlay | number, value: Array4d): void;
-
-	/**
-	 * Sets the prop for the player
-	 */
-	public setProp(prop: RageEnums.PlayerProp | number, drawable: number, texture: number): void;
 
 	/**
 	 * Sets the amount of ammo for the selected weapon
