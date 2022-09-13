@@ -136,7 +136,7 @@ declare class Vector3 {
 	 *
 	 * @returns Normalized copy of a Vector3- one that has the same direction but with a magnitude of 1.
 	 */
-	unit(): Array3d;
+	unit(): Vector3;
 }
 
 declare interface DiscordMp {
@@ -973,8 +973,8 @@ declare interface IClientEvents {
 	click: (
 		absoluteX: number,
 		absoluteY: number,
-		upOrDown: string,
-		leftOrRight: string,
+		upOrDown: 'up' | 'down',
+		leftOrRight: 'left' | 'right',
 		relativeX: number,
 		relativeY: number,
 		worldPosition: Vector3,
@@ -2169,7 +2169,6 @@ declare interface PlayerMp extends PedMpBase {
 	readonly aimTarget: boolean;
 	readonly ip: string;
 	readonly isAiming: boolean;
-	readonly isClimbing: boolean;
 	readonly isEnteringVehicle: boolean;
 	readonly isInCover: boolean;
 	readonly isJumping: boolean;
@@ -2235,6 +2234,7 @@ declare interface PlayerMp extends PedMpBase {
 	hasTeleportFinished(): boolean;
 	hasUseScenarioTask(): boolean;
 	hideBloodDamageByZone(p1: any, p2: boolean): void;
+	isClimbing(): boolean;
 	isControlOn(): boolean;
 	isFreeAiming(): boolean;
 	isFreeForAmbientTask(): boolean;
@@ -2575,6 +2575,7 @@ declare interface VehicleMp extends EntityMp {
 	setDoorsLockedForPlayer(player: Handle, toggle: boolean): void;
 	setDoorsLockedForTeam(team: number, toggle: boolean): void;
 	setDoorsShut(closeInstantly: boolean): void;
+	setDriftTyresEnabled(toggle: boolean): void;
 	setEngineCanDegrade(toggle: boolean): void;
 	setEngineHealth(health: number): void;
 	setEngineOn(value: boolean, instantly: boolean, otherwise: boolean): void;
